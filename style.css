@@ -1,0 +1,48 @@
+html, body {
+  margin: 300px;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+
+#drawCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+height: calc(80% - 100px);
+  z-index: 2;
+  border: 2px dashed rgb(255, 0, 64);
+
+  
+}
+
+#riveCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  z-index: 0;
+/* max-width: 100vw;
+  max-height: 90vh;*/
+}
+
+#riveCanvas.over-toolbar {
+  z-index: 3; /* Higher than drawCanvas */
+}
+
+
+#drawCanvas.hidden {
+  display: none; /* Use display instead of opacity */
+  pointer-events: none;
+
+}
